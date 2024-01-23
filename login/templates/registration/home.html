@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Our Website</title>
+    <link rel="stylesheet" href="{% static 'regis/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rekha ko ghar</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Explore Our Services</h2>
+            <p>You are welcome to my Atm . Today .</p>
+            <form method="get" action="{% url 'login:login' %}">
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+            
+            <form method="get" action="{% url 'login:register' %}">
+                <button type="submit" id="registerButton">Register</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
